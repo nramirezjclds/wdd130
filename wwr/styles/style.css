@@ -1,4 +1,4 @@
-body {
+body, #content {
     max-width: 1600px;
     margin: 0 auto;
 }
@@ -41,4 +41,10 @@ footer p {
 }
 footer p a:hover {
     text-decoration: underline;
+}
+#info {
+    font-size: .5em; 
+}
+#social {
+    padding: 10px;
 }
