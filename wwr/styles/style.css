@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Oxygen:wght@300&display=swap');
 
-.home-title {
+.home-title, .home-title1 {
     font-family: caveat, oxygen, Arial, Helvetica, sans-serif;
     font-size: 3em;
     margin-top: 10px;
@@ -11,7 +11,7 @@ body, #content {
     margin: 0;
     padding: 0;
 }
-nav a, #hero-msg h1, #hero-msg h4, .button-box, main section {
+nav a, #hero-msg h1, #hero-msg h4, .button-box, main section, .button-box1, #adv-msg h1, #adv-msg h5 .book1 {
     text-align: center;
 }
 #background {
@@ -25,7 +25,7 @@ header {
     display: grid;
     grid-template-columns: 150px auto;
 }
-nav a:hover,.join:hover, .book:hover, #background, footer a:hover {
+nav a:hover,.join:hover, .book:hover, #background, footer a:hover, .book1:hover {
     background-color: #03045e; 
     color: #caf0f8;
 }
@@ -36,17 +36,17 @@ nav a{
     color: #caf0f8;
     padding: 35px;
 }
-.msg p, .msg h2, .msg a, .book, footer p {
+.msg p, .msg h2, .msg a, .book, footer p, .book1 {
     color: #03045e;
     font-family: oxygen;
 }
 .icon, .logo {
     width: 80px;
 }
-#hero-img {
+#hero-img, #adventure-img {
     width: 100%;
 }
-nav a, .book, .join, footer a {
+nav a, .book, .join, footer a, .book1 {
     text-decoration: none;
 }
 footer p {
@@ -65,7 +65,7 @@ footer p a:hover {
     font-size: .8em;
     padding-bottom: 15px;
 }
-.msg {
+.msg, .msg2 {
     line-height: 1.5em;
     padding: 35px;
 }
@@ -74,6 +74,13 @@ footer p a:hover {
     padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
+}
+.book1 {
+    font-size: 40px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    background-color: #0077b6;
 }
 h2 {
     margin: 0
@@ -115,18 +122,151 @@ nav {
     grid-template-columns: 1fr 3fr 1fr;
     margin-top: -100px; 
 }
-#hero-box {
+.adventure {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px;
+}
+#hero-box, #adventure-box {
     grid-column: 1/4;
     grid-row: 1/3;
     z-index: -1;
 }
 #hero-msg {
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/3;
     margin-top: 100px;
 }
-#hero-msg, h4, .book {
-    color: white;
+#adv-msg {
+    grid-column: 1/4;
+    grid-row: 1/2;
+    margin-top: -650px;
+}
+h5 {
+    text-align: center;
+    font-size: 3em;
+    color: rgb(255, 56, 56);
+    margin-top: -60px;
+}
+#hero-msg, h4, .book, #adv-msg {
+    color: white; 
+}
+#msg2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 400px;
+}
+#canyon-img {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    border: 8px solid white;
+    border-radius: 25px;
+    width: 90%;
+}
+#msg2 h2 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    z-index: 1;
+    padding-top: 80px;
+    padding-left: 240px;
+    text-decoration: underline;
+}
+#msg2 p {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    padding: 15px;
+    justify-items: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    font-family: oxygen;
+}
+#msg3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 200px;
+}
+#msg3 h1, #msg3 p, #msg3 p2 {
+    grid-column: 2/3;
+    margin-bottom: 50px;
+    text-align: center;
+}
+#msg3 h1 {
+    font-size: 3em;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+#msg3 p {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    font-family: oxygen;
+}
+#msg3 p2 {
+    margin-top: 20px;
+    font-family: oxygen;
+}
+.yellowstone {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.riverbed-img {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    border: 8px solid white;
+    border-radius: 25px;
+    width: 180%;
+}
+.yellowstone h1 {
+    grid-column: 3/5;
+    grid-row: 1/2;
+    z-index: 1;
+    padding-top: 45px;
+    padding-left: 240px;
+    text-decoration: underline;
+}
+.yellowstone p {
+    grid-column: 3/5;
+    grid-row: 1/3;
+    padding: 15px;
+    justify-items: auto;
+    margin: auto;
+    background-color: white;
+    border-radius: 25px;
+    font-family: oxygen;
+}
+.msg4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 200px;
+}
+.msg4 h1, .msg4 p, .msg4 p2 {
+    grid-column: 2/3;
+    margin-bottom: 50px;
+    text-align: center;
+}
+.msg4 h1 {
+    font-size: 3em;
+    text-decoration: overline;
+    text-transform: uppercase;
+}
+.msg4 p {
+    font-size: 2em;
+    text-transform: uppercase;
+    margin-top: -50px;
+    margin-bottom: -10px;
+    font-family: oxygen;
+}
+.msg4 p2 {
+    margin-top: 20px;
+    font-family: oxygen;
 }
 .home-grid {
     display: grid; 
@@ -173,7 +313,7 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid, #adventure {
         display: block;
         height: auto;
     }
@@ -184,16 +324,16 @@ nav {
         display: block;
         padding: 15px;
     }
-    #hero {
+    #hero, #adventure {
         margin-top: 0;
     }
-    #hero-msg {
+    #hero-msg, #adv-msg {
         margin-top: 0;
     }
-    #hero-msg h4 {
+    #hero-msg h4, #adv-msg h5 {
         display: none;
     }
-    .home-title {
+    .home-title, .home-title1 {
         font-size: 25px;
         color: #6f7364;
     }

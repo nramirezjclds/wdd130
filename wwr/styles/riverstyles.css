@@ -1,0 +1,7 @@
+.msg2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#canyon-img {
+    width: 20%;
+}
