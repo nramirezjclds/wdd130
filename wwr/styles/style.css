@@ -221,6 +221,10 @@ h5 {
     border-radius: 25px;
     width: 180%;
 }
+.riverbed-img:hover, #canyon-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
 .yellowstone h1 {
     grid-column: 3/5;
     grid-row: 1/2;
@@ -312,10 +316,19 @@ h5 {
     grid-row: 10/12;
     border-radius: 100px;
 }
+#jack, #jill, #tom {
+    border: 10px solid #d9c2a3;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+#jack:hover, #jill:hover, #tom:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
 #roaring-rapids {
     background-color: #03045e;
     font-family: oxygen;
-    color: white;
+    color: #caf0f8;
     padding: 20px;
     margin-top: 100px;
     margin-bottom: -100px;
@@ -333,6 +346,7 @@ h5 {
     width: 100px;
     padding: 25px;
 }
+/*CSS Change *********************************************************************************************************/
 .home-grid {
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
