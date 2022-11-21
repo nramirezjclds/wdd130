@@ -108,7 +108,7 @@ footer a {
     border-radius: 25px;
 }
 footer p2 {
-    margin: 150px;
+    margin: 260px;
 }
 ul {
     list-style: none;
@@ -134,5 +134,5 @@ input {
     border: 1px solid black;
 }
 .footer p {
-    text-align: left;
+    text-align: right;
 }
