@@ -1,0 +1,32 @@
+#content {
+    width: 1000px;  
+}
+section {
+    width: 50%;
+    padding: 10px;
+    background-color: lightblue;
+}
+.poem1 {
+
+}
+.poem2 {
+    margin: auto;
+}
+.poem3 {
+    margin-left: auto;
+}
+.poem4 {
+    margin: auto;
+}
+p:nth-of-type(2) {
+    text-align: center;
+}
+p:nth-of-type(3) {
+    text-align: right;
+}
+.poem4 p:nth-of-type(1) {
+    text-align: right;
+}
+.poem4 p:nth-of-type(3), .poem4 p:nth-of-type(4) {
+    text-align: left;
+}
