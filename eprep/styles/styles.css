@@ -139,26 +139,28 @@ input {
 }
 #food_supply {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 50px;
+    margin-left: 20px;
+}
+#food_supply h1 {
+    grid-column: 1/4;
+    font-family: acme;
+    text-decoration: underline;
+    margin-left: 80px;
 }
 #food_supply p {
-    grid-column: 1/6;
-    margin-left: 100px;
+    grid-column: 1/4;
     margin-bottom: 100px;
     margin-top: 50px;
     background-color: #A8DADC;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border-radius: 25px;
     border: 8px solid #1D3557;
     box-shadow: 5px 5px 10px gray;
 }
 #food-img {
-    grid-column: 7/9;
+    grid-column: 5/10;
     width: 80%;
     border-radius: 25px;
     box-shadow: 5px 5px 10px gray;
@@ -169,13 +171,12 @@ input {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     margin-top: 50px;
+    margin-left: 20px;
 }
 #mason_jars p {
     grid-column: 4/6;
     background-color: #A8DADC;
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 20px;
     border-radius: 25px;
     border: 8px solid #1D3557;
     box-shadow: 5px 5px 10px gray;
@@ -187,6 +188,4 @@ input {
     border-radius: 25px;
     box-shadow: 5px 5px 10px gray;
     border: 8px solid #1D3557;
-    
-    margin-left: 50px;
 }
