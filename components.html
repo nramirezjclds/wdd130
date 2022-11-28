@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component</title>
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <div class="sidenav">
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Clients</a>
+        <a href="#">Contacts</a>
+    </div>   
+            <div class="slideshow-container">
+                    
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="eprep/images/foodstorage1.jpeg" style="width:100%">
+                <div class="text">Each year, thousands go hungry during the holidays.</div>
+            </div>
+                
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="eprep/images/foodstorage2.jpeg" style="width:100%">
+                <div class="text">With your support, we would be able to feed all in need.</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="eprep/images/ekit1.jpeg" style="width:100%">
+              <div class="text">Help us make this a better, safer world for the next generation.</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </div>
+    
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>
