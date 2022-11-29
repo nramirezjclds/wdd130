@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Care 4 All | Testimonials</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/care_4_all.jpeg" alt="Care 4 All Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="food_supply.html">Food Supply</a>
+                <a href="emergency_kit.html">Emergency Kits</a>
+                <a href="testimonials.html">Testimonials</a>
+                <a href="our_work.html">Our Work</a>
+            </nav>
+        </header>
+        <div id="feedback"></div>
+    <h1>Please enter your information to subscribe to our newsletter as well as share a testimonial for others. Make sure to keep it positive and uplifting, thank you!</h1>
+    <form action="/my-handling-form-page" method="post">
+        <ul>
+          <li>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" />
+          </li>
+          <li>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_email" />
+          </li>
+          <li>
+            <label for="msg7">Testimonial:</label>
+            <textarea id="msg7" name="user_message"></textarea>
+          </li>
+          <li class="button3">
+            <button type="submit">Submit</button>
+          </li>
+        </ul>
+      </form>
+      <div class="container">
+        <img src="images/professional.jpg" alt="Avatar" style="width:90px">
+        <p><span>Nick Ramirez.</span> Founder of Care 4 All.</p>
+        <p>I know that in my heart, we all wish to do good in this world... whether for yourself or others. </p>
+      </div>
+      
+      <div class="container">
+        <img src="images/elise.JPG" alt="Avatar" style="width:90px">
+        <p><span >Elise Ramirez.</span> Concerned, loving wife.</p>
+        <p>“Live! Live the wonderful life that is in you! Let nothing be lost upon you. Be always searching for new sensations. Be afraid of nothing.” ― Oscar Wilde</p>
+      </div>
+
+      <div class="container">
+        <img src="images/oliver.jpg" alt="Avatar" style="width:90px">
+        <p><span >Oliver Ramirez.</span> Just a baby.</p>
+        <p>“All that is gold does not glitter, Not all those who wander are lost; The old that is strong does not wither, Deep roots are not reached by the frost. From the ashes a fire shall be woken, A light from the shadows shall spring; Renewed shall be blade that was broken, The crownless again shall be king.” ― J.R.R. Tolkien.</p>
+      </div>
+    <footer>
+            <p id="info">Care 4 All &copy; 2022 - Nick Ramirez WDD130-24 
+        <p2><a href="site-plan.html">Site Plan</a></p2>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="fb icon">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="twitter icon">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.png" alt="instagram icon">
+            </a>
+            </div>
+    </footer>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. Your response will be reviewed before being published.';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
+</html>
